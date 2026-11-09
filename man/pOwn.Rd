@@ -2,11 +2,8 @@
 % Please edit documentation in R/pOwn.R
 \name{pOwn}
 \alias{pOwn}
-\title{Cumulative Distribution Function of the Own Distribution
-#' @title Cumulative Distribution Function of the Own Distribution}
+\title{Cumulative Distribution Function of the Own Distribution}
 \usage{
-pOwn(q)
-
 pOwn(q)
 }
 \arguments{
@@ -14,13 +11,8 @@ pOwn(q)
 }
 \value{
 A numeric vector with the corresponding cumulative probabilities.
-
-A numeric vector with the corresponding cumulative probabilities.
 }
 \description{
-Evaluates the cumulative distribution function (CDF) of the Own
-continuous distribution, that is, \eqn{P(X \le q)}{P(X <= q)}.
-
 Evaluates the cumulative distribution function (CDF) of the Own
 continuous distribution, that is, \eqn{P(X \le q)}{P(X <= q)}.
 }
@@ -37,24 +29,8 @@ q + \dfrac{1 - \cos(2\pi q)}{2\pi}, & 0 < q < 1 \\
 }{F(q) = 0 if q <= 0; q + (1 - cos(2*pi*q)) / (2*pi) if 0 < q < 1; 1 if q >= 1}
 
 This function is vectorized.
-
-The CDF is obtained by integrating the density from 0 to \code{q}:
-
-\deqn{
-F(q) =
-\begin{cases}
-0, & q \le 0 \\
-q + \dfrac{1 - \cos(2\pi q)}{2\pi}, & 0 < q < 1 \\
-1, & q \ge 1
-\end{cases}
-}{F(q) = 0 if q <= 0; q + (1 - cos(2*pi*q)) / (2*pi) if 0 < q < 1; 1 if q >= 1}
-
-This function is vectorized.
 }
 \examples{
-pOwn(0.5)
-pOwn(0.75) - pOwn(0.25)
-
 pOwn(0.5)
 pOwn(0.75) - pOwn(0.25)
 
