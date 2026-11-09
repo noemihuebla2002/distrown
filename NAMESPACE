@@ -2,3 +2,4 @@
 
 export(dOwn)
 export(pOwn)
+export(rOwn)
