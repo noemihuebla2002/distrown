@@ -4,29 +4,29 @@
 \alias{pOwn}
 \title{Cumulative Distribution Function of the Own Distribution}
 \usage{
-pOwn(q)
+pOwn(x)
 }
 \arguments{
-\item{q}{A numeric value or vector of quantiles.}
+\item{x}{A numeric value or vector of quantiles.}
 }
 \value{
 A numeric vector with the corresponding cumulative probabilities.
 }
 \description{
 Evaluates the cumulative distribution function (CDF) of the Own
-continuous distribution, that is, \eqn{P(X \le q)}{P(X <= q)}.
+continuous distribution, that is, \eqn{P(X \le x)}{P(X <= x)}.
 }
 \details{
-The CDF is obtained by integrating the density from 0 to \code{q}:
+The CDF is obtained by integrating the density from 0 to \code{x}:
 
 \deqn{
-F(q) =
+F(x) =
 \begin{cases}
-0, & q \le 0 \\
-q + \dfrac{1 - \cos(2\pi q)}{2\pi}, & 0 < q < 1 \\
-1, & q \ge 1
+0, & x \le 0 \\
+x + \dfrac{1 - \cos(2\pi x)}{2\pi}, & 0 < x < 1 \\
+1, & x \ge 1
 \end{cases}
-}{F(q) = 0 if q <= 0; q + (1 - cos(2*pi*q)) / (2*pi) if 0 < q < 1; 1 if q >= 1}
+}{F(x) = 0 if x <= 0; x + (1 - cos(2*pi*x)) / (2*pi) if 0 < x < 1; 1 if x >= 1}
 
 This function is vectorized.
 }

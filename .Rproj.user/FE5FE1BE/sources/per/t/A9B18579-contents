@@ -1,0 +1,28 @@
+Package: distOwn
+Type: Package
+Title: Custom Continuous Distribution f(x) = 1 + sin(2*pi*x) on (0,1)
+Version: 0.1.0
+Authors@R: c(
+    person("Paola Alexandra", "Chacasaguay Hualli", role = c("ctb"),
+           email = "paolachacasaguay1@gmail.com"),
+    person("Ligia Noemi", "Huebla", role = c("aut", "cre"),
+           email = "ligia.huebla@espoch.edu.ec"),
+    person("Heidy", "Macas", role = "ctb",
+           email = "heidy.macas@espoch.edu.ec"),
+    person("Dina", "Pintag", role = "ctb",
+           email = "dina.pintag@espoch.edu.ec"),
+    person("Lisbeth", "Taipe", role = "ctb",
+           email = "erika.taipe@espoch.edu.ec"))
+Description: This package contains functions to work with a custom
+    continuous distribution with density f(x) = 1 + sin(2*pi*x) on (0,1).
+    It calculates probabilities, generates random numbers with the inverse
+    transform method, compares theoretical and sample results, and checks
+    the fit with a histogram and goodness-of-fit tests.
+License: GPL-3
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats, graphics
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.1.1
